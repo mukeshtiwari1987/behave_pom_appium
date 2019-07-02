@@ -2,13 +2,13 @@ from paver.easy import *
 from paver.setuputils import setup
 
 setup(
-    name ='behave-bdd',
+    name ='behave_pom_appium',
     version ='0.1.0',
     description ="Behave Integration with Local Android, iOS and BrowserStack",
     license = "MIT",
     keywords = "python behave selenium appium android ios browserstack",
     packages=['features'],
-    url='https://github.com/browserstack/lettuce-browserstack'
+    url='https://github.com/mukeshtiwari1987/behave_pom_appium'
 )
 
 @task

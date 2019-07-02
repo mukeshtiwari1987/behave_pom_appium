@@ -1,5 +1,16 @@
+"""
+Common Locators
+"""
+continue_btn_xpath = "//input[@id='email-signup-button']"
+"""
+Login Page Locators
+"""
 login_btn_id = "login-button"
 incorrect_creds_msg_xpath = "//div[@id='login-button-view']/div[@class='error-msg-wrapper focus']"
+
+"""
+Plan Home Page Locators
+"""
 title_icon_xpath = "//div[@class='display green']"
 homestate_input_id = 'home-input-state-select'
 homecity_input_id = "home-input-city-select"
@@ -15,13 +26,16 @@ zip_code_error_xpath = "//div[@class='helper-text']//div[text()='Please enter a 
 date_error_xpath = "//div[@class='helper-text']//div[text()='Please enter a future date']"
 upfront_payment_xpath = "//div[@class='helper-text']//div[text()='Please enter your expected down payment']"
 month_payment_xpath = "//div[@class='helper-text']//div[text()='Please enter your expected monthly payment']"
+
+"""
+Sign Up Page Locators
+"""
 hamburger_icon_xpath = "//div[@class='mobile-header-wrapper navbar-wrapper']//div[@class='bar']"
 login_btn_xpath = "//div[@class='nav-menu-inner']/a[@class='login nav-link']"
 signup_btn_xpath = "//div[@class='nav-menu-inner']/a[@class='signup cta orange']"
 x_icon_xpath = "//div[@class='mobile-header-wrapper navbar-wrapper nav-open']//div[@class='bar']"
 email_btn_xpath = "//input[@value='Continue With Email']"
 email_form_xpath = "//input[@placeholder='What’s your email?']"
-continue_btn_xpath = "//input[@id='email-signup-button']"
 error_msg_xpath = "//div[@class='helper-text']/div[@class='error-msg']"
 email_input_xpath = "//input[@placeholder='Email Address']"
 password_input_xpath = "//input[@placeholder='Password']"
