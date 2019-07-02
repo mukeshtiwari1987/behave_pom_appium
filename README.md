@@ -62,3 +62,7 @@ local Appium Grid & BrowserStack.
 ```gem install travis```
 4. In the command prompt type ```travis encrypt access_key="BROWSERSTACK_ACCESS_KEY"``` and make the note of output.
 5. Place the output in under secure in .travis.yml.
+
+# Todo List
+1. Add Allure Reporting
+2. Move common methods to Python class
