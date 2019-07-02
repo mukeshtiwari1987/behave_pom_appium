@@ -1,7 +1,9 @@
 from behave import *
-from features.steps.pom.element_locators import continue_btn_xpath
-from features.steps.pom.common_function import open_url, find_by_xpath_and_click
 from nose.tools import assert_equals
+
+from features.steps.pom.common_function import (find_by_xpath_and_click,
+                                                open_url)
+from features.steps.pom.element_locators import continue_btn_xpath
 
 
 @given('I visit url "{url}"')

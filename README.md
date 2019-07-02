@@ -38,8 +38,8 @@ local Appium Grid & BrowserStack.
 2. In command prompt, type ```adb devices``` and make the note of Android UDID.
 3. In android.json file under config folder, replace the value of 'deviceName' with Android UDID.    
 4. Type ```paver run android``` in command prompt to see the test running
-![](https://memegenerator.net/img/instances/68740545/oh-really-show-me-the-proof.jpg)
-Here is the Proof!
+![](https://memegenerator.net/img/instances/68740545/oh-really-show-me-the-proof.jpg)<br>
+##### Here is the Proof!
 ![](images/android_proof.gif) 
 # How to run test on local iOS simulator
 1. Open XCode, Click 'Open Developer Tool' and click 'Simulator'. Select an iPhone simulator of your choice.

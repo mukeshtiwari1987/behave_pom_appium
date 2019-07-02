@@ -1,12 +1,20 @@
 from behave import *
 from nose.tools import assert_equals
 
-from features.steps.pom.element_locators import hamburger_icon_xpath, login_btn_xpath, signup_btn_xpath,\
-x_icon_xpath, email_btn_xpath, email_form_xpath, error_msg_xpath, email_input_xpath,\
-password_input_xpath, checkmark_radio_xpath, submit_btn_id, msg_id
-
-from features.steps.pom.common_function import wait, find_by_xpath_and_click, find_text_from_xpath_and_assert_text,\
-find_text_from_id_and_assert_text, find_by_xpath_and_send_keys, find_by_id_and_click
+from features.steps.pom.common_function import (
+    find_by_id_and_click, find_by_xpath_and_click, find_by_xpath_and_send_keys,
+    find_text_from_id_and_assert_text, find_text_from_xpath_and_assert_text,
+    wait)
+from features.steps.pom.element_locators import (checkmark_radio_xpath,
+                                                 email_btn_xpath,
+                                                 email_form_xpath,
+                                                 email_input_xpath,
+                                                 error_msg_xpath,
+                                                 hamburger_icon_xpath,
+                                                 login_btn_xpath, msg_id,
+                                                 password_input_xpath,
+                                                 signup_btn_xpath,
+                                                 submit_btn_id, x_icon_xpath)
 
 
 @when('I click Hamburger Icon')

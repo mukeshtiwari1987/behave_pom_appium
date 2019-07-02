@@ -1,6 +1,9 @@
 from behave import *
-from features.steps.pom.element_locators import login_btn_id, incorrect_creds_msg_xpath
-from features.steps.pom.common_function import wait, find_by_id_and_click, find_text_from_xpath_and_assert_text
+
+from features.steps.pom.common_function import (
+    find_by_id_and_click, find_text_from_xpath_and_assert_text, wait)
+from features.steps.pom.element_locators import (incorrect_creds_msg_xpath,
+                                                 login_btn_id)
 
 
 @when('I click Login button')

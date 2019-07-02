@@ -1,7 +1,6 @@
 from paver.easy import *
 from paver.setuputils import setup
 
-
 setup(
     name ='behave-bdd',
     version ='0.1.0',

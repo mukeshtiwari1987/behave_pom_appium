@@ -1,13 +1,24 @@
 from behave import *
 from selenium.webdriver.support.select import Select
 
-from features.steps.pom.element_locators import title_icon_xpath, homestate_input_id,\
-homecity_input_id, city_dropdown_xpath, zipcode_input_id, date_input_xpath, excellent_button_xpath,\
-upfrontamount_input_xpath, monthlyspend_input_xpath, getmyplan_input_xpath, new_plan_xpath, zip_code_error_xpath,\
-date_error_xpath, upfront_payment_xpath, month_payment_xpath
-
-from features.steps.pom.common_function import wait, find_by_xpath_and_click, find_text_from_xpath_and_assert_text,\
-find_by_id_and_send_keys, find_by_xpath_and_send_keys
+from features.steps.pom.common_function import (
+    find_by_id_and_send_keys, find_by_xpath_and_click,
+    find_by_xpath_and_send_keys, find_text_from_xpath_and_assert_text, wait)
+from features.steps.pom.element_locators import (city_dropdown_xpath,
+                                                 date_error_xpath,
+                                                 date_input_xpath,
+                                                 excellent_button_xpath,
+                                                 getmyplan_input_xpath,
+                                                 homecity_input_id,
+                                                 homestate_input_id,
+                                                 month_payment_xpath,
+                                                 monthlyspend_input_xpath,
+                                                 new_plan_xpath,
+                                                 title_icon_xpath,
+                                                 upfront_payment_xpath,
+                                                 upfrontamount_input_xpath,
+                                                 zip_code_error_xpath,
+                                                 zipcode_input_id)
 
 
 @then('I should see "{plan_home_icon_text}"')

@@ -1,5 +1,6 @@
-from nose.tools import assert_equals
 import time
+
+from nose.tools import assert_equals
 
 
 def wait(seconds):
