@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mukeshtiwari1987/behave_pom_appium.svg?branch=master)](https://travis-ci.org/mukeshtiwari1987/behave_pom_appium)
 # Python Behave Local BrowserStack
 This framework utilizes Behaviour Driven Development (BDD) and Page Object Model (POM) for running Appium tests.
 Currently, the framework comes with out of the box support for running tests on a local android and ios devices behind a
