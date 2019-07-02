@@ -1,0 +1,12 @@
+{
+    "capabilities": {
+        "automationName": "UiAutomator2"
+    },
+    "environments": [
+        {
+            "platformName": "Android",
+            "browserName": "Chrome",
+            "deviceName": "emulator-5554"
+        }
+    ]
+}

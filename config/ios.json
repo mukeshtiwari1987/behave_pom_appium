@@ -1,0 +1,13 @@
+{
+    "capabilities": {
+        "automationName": "XCUITest"
+    },
+    "environments": [
+        {
+            "platformName": "iOS",
+            "platformVersion": "12.2",
+            "browserName": "Safari",
+            "deviceName": "appiumTest-3FDC5662-BDD7-4074-9000-0D29B8FAB46A-iPhone Xr"
+        }
+    ]
+}
