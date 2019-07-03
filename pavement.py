@@ -1,5 +1,7 @@
 from paver.easy import *
 from paver.setuputils import setup
+import os
+
 
 setup(
     name ='behave_pom_appium',
@@ -37,4 +39,7 @@ def run(args):
 
 
 def run_behave_test(config, task_id=0):
-    sh('CONFIG_FILE=config/{}.json TASK_ID={} behave'.format(config, task_id))
+    if os.name == "nt":
+        sh('cmd /C "set CONFIG_FILE=config/{}.json && set TASK_ID={} && behave"'.format(config, task_id))
+    else:
+        sh('CONFIG_FILE=config/{}.json TASK_ID={} behave'.format(config, task_id))
