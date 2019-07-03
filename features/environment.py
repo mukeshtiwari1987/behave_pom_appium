@@ -11,9 +11,6 @@ TASK_ID = int(os.environ['TASK_ID']) if 'TASK_ID' in os.environ else 0
 with open(CONFIG_FILE) as data_file:
     CONFIG = json.load(data_file)
 
-BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME'] if 'BROWSERSTACK_USERNAME' in os.environ else CONFIG['user']
-BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY'] if 'BROWSERSTACK_ACCESS_KEY' in os.environ else CONFIG['key']
-
 
 def before_feature(context, scenario):
 
@@ -38,7 +35,11 @@ def before_feature(context, scenario):
             command_executor=LOCAL_APPIUM_HUB
         )
     elif CONFIG_FILE == "config/browserstack.json":
+        BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME'] if 'BROWSERSTACK_USERNAME' in os.environ else CONFIG['user']
+        BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY'] if 'BROWSERSTACK_ACCESS_KEY' in os.environ else CONFIG['key']
+
         desired_capabilities = CONFIG['environments'][TASK_ID]
+
         for key in CONFIG["capabilities"]:
             if key not in desired_capabilities:
                 desired_capabilities[key] = CONFIG["capabilities"][key]
